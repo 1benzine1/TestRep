@@ -25,7 +25,7 @@ namespace ConsoleApplication1
             Console.WriteLine("Исп делегата " + temp);
             Console.WriteLine(tsc.EventOn(x));
 
-            var yardracers = new YardRacers{NameRacer = "Жмышенко Валерий Альбертович", 
+            var yardracers = new YardRacers{NameRacer = "Быстров Валерий Витольдович", 
                                                                  Birthday = DateTime.Today, Cars = new List<Cars>()};
 
             yardracers.Cars.Add(new Cars { CarName = "Чепырка", CarAge = 228});
@@ -34,11 +34,11 @@ namespace ConsoleApplication1
 
             racersrep.AddRacer(yardracers);
 
-            Console.WriteLine("\n\tУвага! Увага! Выехает гонщык: " + yardracers.NameRacer);
-            Console.WriteLine("\tДень народження гинщика: " + yardracers.Birthday);
+            Console.WriteLine("\n\tГонщик: " + yardracers.NameRacer);
+            Console.WriteLine("\tДень рождения гонщика: " + yardracers.Birthday);
 
             foreach (var i in yardracers.Cars)
-            Console.WriteLine("\tМодель авто ({0}), якому {1} рокив. ", i.CarName, i.CarAge);
+            Console.WriteLine("\tМодель авто ({0}), лет {1} . ", i.CarName, i.CarAge);
 
             Console.ReadKey();
 
